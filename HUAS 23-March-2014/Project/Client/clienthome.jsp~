@@ -1,0 +1,53 @@
+<%@page import="java.sql.*"%>
+<%
+try
+{
+	HttpSession ses=request.getSession(true);
+	String dbuser=ses.getValue("dbuser").toString();
+	ses.putValue("dbuser",dbuser);
+	String dbpwd=ses.getValue("dbpwd").toString();
+	ses.putValue("dbpwd",dbpwd);
+	String dbnm=ses.getValue("dbnm").toString();
+	ses.putValue("dbnm",dbnm);
+	String firmnm=ses.getValue("firmnm").toString();
+	ses.putValue("firmnm",firmnm);
+	
+	Class.forName("com.mysql.jdbc.Driver");
+	Connection cn=DriverManager.getConnection("jdbc:mysql://localhost/"+dbnm,dbuser,dbpwd);
+	Statement smt=cn.createStatement();
+	%>
+	<html>
+	<head>
+	<link rel="stylesheet" href="style.css" type="text/css" media="all">
+	<title>HOME::<%=firmnm%></title>
+	</head>
+	<body>
+	<div id="container">
+	<div id="top">
+		<h1><i><%=firmnm%></i></h1>
+	</div>
+	<div id="mainlinks">
+		<center>
+		<a href=client_bill.jsp target=aa><b>Create Bill</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href=client_orders.jsp target=aa><b>Orders</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href=client_stock.jsp target=aa><b>Stock</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</center>
+	</div>
+	<div id="content">
+		<iframe name=aa width=1050 height=500></iframe>
+	</div>
+	<div id="bottom">
+	</div>
+	</div>
+	</body>
+	</html>
+	<%
+}
+catch(Exception ex)
+{
+	%>
+	<%="Error:"+ex%>
+	<%
+}
+%>
+

@@ -1,0 +1,67 @@
+/* CSS Document */
+html
+{
+	background-color:#CCDDEE;
+}
+
+body
+{
+	border:medium;
+	border-width:medium;
+}
+
+a
+{
+	text-decoration:none;
+	font:"Times New Roman", Times, serif;
+	font-size:20px;
+	color:#FFFFFF;
+}
+
+th
+{
+	background-color:#FFFFFF;
+}
+
+#container
+{
+	border-style:solid;
+	border-width:thick;
+	border-color:#3399CC;
+	margin:0 auto;
+	width:1050px;
+	background-color:#FFFFFF;
+}
+#top
+{
+	border-bottom-style:solid;
+	border-bottom-width:thick;
+	border-bottom-color:#3399CC;
+	text-align:center;
+	color:#3399CC;
+	height:50px;
+	background-color:#FFFFFF;
+}
+#mainlinks
+{
+	azimuth:center;
+	text-align:center;
+	height:40px;
+	background-color:#3399CC;
+}
+#content
+{
+	background-color:#FFFFFF;
+}
+#left
+{
+	text-align:center;
+	width:150px;
+	height:auto;
+	background-color:#99CCFF;
+}
+#bottom
+{
+	background-color:#3399CC;
+	height:50px;
+}

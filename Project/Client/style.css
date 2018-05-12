@@ -1,0 +1,114 @@
+/* Client CSS Document */
+html
+{
+}
+
+body
+{
+	height:auto;
+	margin:0 auto;
+	background-color:#FFFFDD;
+}
+
+a
+{
+	text-decoration:none;
+	font:"Times New Roman", Times, serif;
+	color:#666666;
+}
+a:hover
+{
+	color:#AAAAAA;
+}
+
+h2,h3
+{
+	color:#c40e0e;
+}
+
+button:hover
+{
+	background-color:#4d4c4c;
+	color:#ffffff;
+	opacity:0.8;
+}
+
+button
+{
+	opacity:1;
+	background-color:#FFFFFF;
+	color:#4D4C4C;
+	border:#CFCFCF solid thin;
+	border-radius:6px;
+}
+
+[type=submit]:hover,[type=reset]:hover,[type=button]:hover
+{
+	opacity:0.8;
+}
+
+[type=submit],[type=reset],[type=button]
+{
+	opacity:1;
+	background-color:#CFCFCF;
+	color:#666666;
+	border:#CFCFCF solid thin;
+	border-radius:6px;
+}
+
+select
+{
+	border:#AAAAAA solid thin;
+	background-color:#FFFFFF;
+	text-align:center;
+}
+
+th
+{
+	background-color:#4D4C4C;
+	color:#FFFFFF;
+}
+
+#aa_frame
+{
+	border-width:0px;
+}
+
+#container
+{
+	margin:0 auto;
+	width:100%;
+	background-color:#FFFFDD;
+}
+#top
+{
+	text-align:center;
+	color:#CFCFCF;
+	height:50px;
+	background-color:#666666;
+}
+#mainlinks
+{
+	color:#666666;
+	height:26px;
+	padding-top:5px;
+	text-align:center;
+	background-color:#FFFFFF;
+	border-bottom:#4D4C4C thin groove;
+}
+#content
+{
+	width:100%;
+	height:auto;
+	background-color:#FFFFDD;
+}
+#bottom
+{
+	padding:0px 10px;
+	position:fixed;
+	bottom:0px;
+	right:0px;
+	z-index:2;
+	color:#666666;
+	height:40px;
+}

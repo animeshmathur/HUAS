@@ -1,0 +1,116 @@
+/* Client CSS Document */
+html
+{
+}
+
+body
+{
+	height:auto;
+	margin:0 auto;
+}
+
+a
+{
+	text-decoration:none;
+	font:"Times New Roman", Times, serif;
+	color:#666666;
+}
+a:hover
+{
+	color:#FFFFFF;
+	text-decoration:underline;
+}
+
+h2,h3
+{
+	color:#CFCFCF;
+}
+
+button:hover
+{
+	opacity:0.8;
+}
+
+button
+{
+	opacity:1;
+	background-color:#0066CC;
+	color:#FFFFFF;
+	border:#CFCFCF solid thin;
+	border-radius:6px;
+}
+
+[type=submit]:hover,[type=reset]:hover,[type=button]:hover
+{
+	opacity:0.8;
+}
+
+[type=submit],[type=reset],[type=button]
+{
+	opacity:1;
+	background-color:#CFCFCF;
+	color:#666666;
+	border:#CFCFCF solid thin;
+	border-radius:6px;
+}
+
+select
+{
+	min-width:180px;
+	border:#CFCFCF solid thin;
+	color:#CFCFCF;
+	background-color:#666666;
+	text-align:center;
+}
+
+th
+{
+	background-color:#CFCFCF;
+	color:#666666;
+}
+
+#aa_frame
+{
+	border-width:0px;
+}
+
+#container
+{
+	height:100%;
+	margin:0 auto;
+	width:100%;
+	background-color:#666666;
+}
+#top
+{
+	text-align:center;
+	color:#CFCFCF;
+	height:50px;
+}
+#mainlinks
+{
+	color:#666666;
+	text-align:center;
+	height:26px;
+	background-color:#CFCFCF;
+}
+#mid
+{
+	height:auto;
+	background-color:#666666;
+}
+#content
+{
+	width:100%;
+	height:auto;
+	background-color:#FFFFEE;
+	float:right;
+}
+#bottom
+{
+	float:left;
+	background-color:#CFCFCF;
+	color:#666666;
+	height:50px;
+	width:100%;
+}

@@ -1,0 +1,9 @@
+<html>
+<head><title>Upload Pic</title></head>
+<body>
+<form action="uploadpicsubmit.jsp" enctype="multipart/form-data" method=post>
+Select Pic: <input type=file name=pic>
+<input type=submit value=Upload>
+</form>
+</body>
+</html>

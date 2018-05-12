@@ -1,0 +1,93 @@
+/* CSS Document */
+
+body
+{
+	height:auto;
+	margin:0 auto;
+	border:medium;
+	border-width:medium;
+}
+a
+{
+	text-decoration:none;
+	font:"Times New Roman", Times, serif;
+	color:#FFFFFF;
+}
+#aa_frame
+{
+	border-width:0px;
+}
+#container
+{
+	height:100%;
+	margin:0 auto;
+	width:100%;
+	background-color:#FFFFFF;
+}
+#top
+{
+	text-align:center;
+	color:#FFFFFF;
+	height:100px;
+}
+#topleft
+{
+	margin:0 auto;
+	width:20%;
+	height:100%;
+	float:left;
+}
+#topright
+{
+	width:80%;
+	height:100%;
+	float:right;
+	background-color:#FFFFFF;
+}
+#mainlinks
+{
+	color:#FFFFFF;
+	text-align:center;
+	height:30px;
+	background-color:#0066CC;
+}
+#mid
+{
+	height:auto;
+	background-color:#FFFFFF;
+}
+#content
+{
+	width:68%;
+	height:auto;
+	background-color:#FFFFFF;
+	float:right;
+}
+#left
+{
+	font-size:12px;
+	color:#FFFFFF;
+	border-style:solid;
+	border-width:thin;
+	border-color:#0066CC;
+	width:12%;
+	height:auto;
+	background-color:#0066CC;
+	float:left;
+}
+#right
+{
+	color:#FFFFFF;
+	width:16%;
+	min-height:10px;
+	background-color:#FFFFFF;
+	float:right;
+}
+#bottom
+{
+	float:left;
+	background-color:#0066CC;
+	color:#FFFFFF;
+	height:50px;
+	width:100%;
+}

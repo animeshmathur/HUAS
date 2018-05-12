@@ -1,0 +1,42 @@
+item_no=1;
+	function addItemField()
+	{
+		var code="<table><tr>";
+		var x=document.getElementById(item_no);
+		code+="<td>Item #"+item_no+":</td>";
+		<%
+		String q="select item_id,item_name from item_reg where item_qty>0";
+		ResultSet rs=smt.executeQuery(q);
+		if(rs.next())
+		{
+			%>
+			code+="<td><select name=item_id_"+item_no+"><option value=-1>--select--</option>";
+			<%
+			do
+			{
+				%>
+				code+="<option value=\"<%=rs.getString(1)%>\"><%=rs.getString(2)%></option>";
+				<%
+			}while(rs.next());
+			%>
+			code+="</select></td><td>Qty. :</td>";
+			code+="<td><select name=item_qty_"+item_no+">";
+			<%
+			for(int i=1;i<=100;i++)
+			{
+				%>
+				code+="<option value=<%=i%>><%=i%></option>";
+				<%
+			}
+			%>
+			code+="</select></td>";
+			<%
+		}
+		%>
+		
+		code+="</tr></table>";
+		item_no++;
+		code+="<p id="+item_no+"><input type=hidden name=total_items value="+(item_no-1)+"></p>";
+		x.innerHTML=code;
+	}
+	
